@@ -19,8 +19,10 @@ pipeline {
                 echo 'checking push stage'
             }
         } 
-stage('Push') {
+            stage('deploy') {
             steps {
-                echo 'checking push stage'
+                echo 'checking deploy stage'
 }
         }
+    }
+}
