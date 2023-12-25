@@ -13,7 +13,7 @@ pipeline {
                 echo 'checking build stage'
             }
         }
-
+    
         stage('Push') {
             steps {
                 echo 'checking push stage'
