@@ -4,15 +4,28 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Madhuchandang1/sample_node.git'
+                echo 'checking checkout stage'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                echo 'checking build stage'
             }
         }
+
+        stage('Push') {
+            steps {
+                echo 'checking push stage'
+            }
+        } 
+            stage('deploy') {
+            steps {
+                echo 'checking deploy stage'
+}
+        }
+    }
+}
 
         stage('Push') {
             steps {
