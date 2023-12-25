@@ -7,7 +7,6 @@ pipeline {
                 echo 'checking checkout stage'
             }
         }
-
         stage('Build') {
             steps {
                 echo 'checking build stage'
